@@ -1,7 +1,10 @@
 from os import system
 
-height: float = float(input("Kérem adja meg a magasságát: "))
-name: str = input("Kérem adja meg a nevét: ")
+print("Kérem adja meg a magasságát: ", end='')
+height: float = float(input())
+
+print("Kérem adja meg a nevét: ", end='')
+name: str = input()
 
 system('cls')
 

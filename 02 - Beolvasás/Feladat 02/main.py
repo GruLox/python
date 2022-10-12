@@ -1,8 +1,10 @@
 from os import system
 
+print("Kérem adja meg a nevét: ", end='')
+name : str = input()
 
-name : str = input("Kérem adja meg a nevét: ")
-birthYear : int = int(input("Kérem adja meg a születési évét: "))
+print("Kérem adja meg a születési évét: ", end='')
+birthYear : int = int(input())
 
 system('cls')
 
