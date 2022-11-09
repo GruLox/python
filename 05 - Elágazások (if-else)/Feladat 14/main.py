@@ -14,8 +14,8 @@ z = int(input())
 if(x % y == 0 and x % z == 0):
     print("X osztható mindkét számmal.")
 elif(x % y == 0):
-    print("X oszthatü y-nal")
+    print("X osztható y-nal")
 elif(x % z == 0):
-    print("X oszthatü z-vel")
+    print("X osztható z-vel")
 else:
     print("X nem osztható egyik számmal sem.")
