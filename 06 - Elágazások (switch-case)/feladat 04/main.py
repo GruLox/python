@@ -21,6 +21,11 @@ match operator:
         result = round(num1 / num2, 2)
     case "*":
         result = round(num1 * num2, 2)
+    case _:
+        print("Nincs ilyen művelet!")
 
-print(f"Az eredmény: {result}")
+if(result != None):
+    print(f"Az eredmény: {result}")
+
+
     
