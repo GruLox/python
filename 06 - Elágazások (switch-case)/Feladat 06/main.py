@@ -16,9 +16,9 @@ choice=input()
 
 match choice:
     case "t":
-        result= width * height
+        result = width * height
     case "k":
-        result=2 * (width+height)
+        result = 2 * (width+height)
     case "a":
         result = math.sqrt(math.pow(width, 2)+ math.pow(height, 2))
     case _:
