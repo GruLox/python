@@ -1,7 +1,7 @@
 start: int = None
 end : int = None
-evenCount: int = 0
-oddCount: int = 0
+evenSum: int = 0
+oddSum: int = 0
 result: str = None
 
 print("Kérem adja meg az intervallum kezdőértékét: ")
@@ -12,13 +12,13 @@ end = int(input())
 
 for i in range(start, end + 1, 1):
     if (i % 2 != 0):
-        oddCount += 1
+        oddSum += i
     else:
-        evenCount += 1
+        evenSum += i
 
-if (evenCount > oddCount):
+if (evenSum > oddSum):
     result = "páros"
-elif (evenCount < oddCount):
+elif (evenSum < oddSum):
     result = "páratlan"
 else:
     print("A páros és páratlan számok mennyisége megegyezik.")
