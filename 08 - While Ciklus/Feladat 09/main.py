@@ -1,10 +1,10 @@
 number: int = None
 temp: str = None
 
-while (number == None):
+while (number == None or  not (number >= 100 and number <= 999)):
     print("Háromjegyű szám: ")
     temp = input()
-    if (temp.isnumeric() and len(temp) == 3):
+    if (temp.isnumeric()):
         number = int(temp)
     
 if (number % 7 == 0):

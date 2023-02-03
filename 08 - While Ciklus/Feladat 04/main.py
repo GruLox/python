@@ -11,4 +11,3 @@ while (sum < 100):
         print(f"Az összeg: {sum}")
     else:
         print("Nem számot adott meg!")
-        continue

@@ -7,18 +7,17 @@ tempEven: str = None
 tempOdd: str = None
 countOfDivisibleBy4: int = 0
 
-while (smallEven == None or bigOdd == None or smallEven % 2 != 0
-    or bigOdd % 2 != 1 or smallEven >= bigOdd):
+while (smallEven == None or smallEven % 2 != 0):
     print("Kérem adjon meg egy páros számot: ")
     tempEven = input()
+    if (tempEven.isnumeric()):
+        smallEven = int(tempEven)
+
+while (bigOdd == None or bigOdd % 2 != 1 or bigOdd <= smallEven):
     print("Kérem adjon meg egy, az előzőnél nagyobb páratlan számot: ")
     tempOdd = input()
-
-    if (tempEven.isnumeric() and tempOdd.isnumeric()):
-        smallEven = int(tempEven)
+    if (tempOdd.isnumeric()):
         bigOdd = int(tempOdd)
-    else:
-        continue
 
 randN = randint(smallEven, bigOdd)
 print(f"A random szám: {randN}")
