@@ -19,7 +19,7 @@ while(tries < 5):
         print("Talált!")
         break
     else:
-        tries = tries + 1
+        tries += 1
         
 if (tries==5):
     print("Nem nyert!")

@@ -1,3 +1,4 @@
+temp: str = None
 age: int = None
 
 while  age == None or not (age >= 0 and age <= 99):
