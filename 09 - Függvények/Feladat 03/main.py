@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 def main():
     name: str = None
@@ -16,9 +16,9 @@ def get_name() -> str:
 
 
 def get_birth_year() -> int:
-    print("Kérem adja meg a születési dátumat")
+    print("Kérem adja meg a születési dátumát (ÉÉÉÉ-HH-NN): ", end="")
     date: str = input()
-    return int(date[:3])
+    return int(date[:4])
 
 
 def calculate_age(year: int):
