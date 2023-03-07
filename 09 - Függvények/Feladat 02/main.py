@@ -1,21 +1,18 @@
-def main():
-    name: str = None
-
-    name = get_str()
-    greet(name)
+from consoleIO import get_str, greet
 
 
-def get_str() -> str:
-    print("Kérem adja meg a nevét: ", end="")
-    return input()
+name: str = None
+
+name = get_str()
+greet(name)
+
+
+
     
 
-def greet(s: str) -> None:
-    print(f"Hello, {s}")
 
 
-if (__name__ == "__main__"):
-    main()
+
 
 
     
