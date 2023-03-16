@@ -2,9 +2,16 @@ from datetime import datetime
 
 
 def get_birth_year() -> int:
-    print("Kérem adja meg a születési dátumát (ÉÉÉÉ-HH-NN): ", end="")
-    date: str = input()
-    return int(date[:4])
+    temp: str = None
+    date: int = None
+
+    while (date == None):
+        print("Kérem adja meg a születési évét (ÉÉÉÉ): ", end="")
+        temp: str = input()
+        if (temp.isnumeric() and len(temp) == 4):
+            date = int(temp)
+        
+    return date
 
 
 def calculate_age(year: int):
