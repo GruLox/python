@@ -1,9 +1,9 @@
-from consoleIO import get_name
+from consoleIO import getName
 from helpers import color
 
 name: str = None
 
-name = get_name()
+name = getName()
 name = color(name)
-print(f"Üdvözlöm, {name}")    
+print(f"Üdvözlöm, {name}")
 

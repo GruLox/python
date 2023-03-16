@@ -1,4 +1,4 @@
-def get_name() -> str:
+def getName() -> str:
     name: str = None
 
     while (name == None or len(name) < 2):
