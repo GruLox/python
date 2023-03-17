@@ -1,4 +1,4 @@
-def get_cord(axis: str):
+def get_cord(axis: str) -> int:
     temp: str = None
     coord: int = None
     while (temp == None):

@@ -5,7 +5,7 @@ def getAmount() -> float:
     truncatedString: str = None
 
     while (number == None):
-        print("Adjon meg egy számot: ", end="")
+        print("Adja meg a az átváltandó értéket HUF-ban: ", end="")
         temp = input()
         truncatedString = temp.replace(".", "").replace("-", "")
         isNumber = truncatedString.isnumeric()
@@ -19,5 +19,12 @@ def getAmount() -> float:
 
 
 def getCurrency() -> str:
-    pass
+    currency: str = None
+
+    while (currency == None or currency not in ["EUR", "JPY", "USD", "CHF"]):
+        print("Kérem adja meg a cél valutát: ", end="")
+        currency = input().upper()
+    
+    return currency
+
     

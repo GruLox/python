@@ -3,19 +3,19 @@ JPY: float = 0.75 * EUR
 USD: float = 0.8 * EUR
 CHF: float = 0.55 * EUR
 
-def convert(ticker: str, amount: float):
-    if (ticker not in ["EUR", "JPY", "USD", "CHF"]):
-        print("Invalid ticker")
+def convert(currency: str, amount: float) -> float:
+    if (currency not in ["EUR", "JPY", "USD", "CHF"]):
+        print("Invalid currency")
         return None
     else:
-        match ticker:
+        match currency:
             case "EUR":
-                return amount / EUR
+                return round(amount / EUR, 2)
             case "JPY":
-                return amount / JPY
+                return round(amount / JPY, 2)
             case "USD":
-                return amount / USD
+                return round(amount / USD, 2)
             case "CHF":
-                return amount / CHF
+                return round(amount / CHF, 2)
 
     

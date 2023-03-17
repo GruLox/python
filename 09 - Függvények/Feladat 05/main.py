@@ -1,14 +1,11 @@
 from consoleIO import getStr
 from helpers import countMatches
 
-word1: str = None
-word2: str = None
-matchCount: int = None
 
-word1 = getStr()
-word2 = getStr()
+word1: str = getStr()
+word2: str = getStr()
 
-matchCount = countMatches(word1, word2)
+matchCount: int = countMatches(word1, word2)
 
 print(matchCount)
 

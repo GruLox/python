@@ -1,4 +1,4 @@
-def convert(unit: str, temp: float):
+def convert(unit: str, temp: float) -> float:
     if (unit.upper() == "F"):
         return (9 / 5) * temp + 32
 
