@@ -25,7 +25,7 @@ def sumOfList(arr: list) -> int:
     return sum
 
 
-def decideWinner(listSum1: list, listSum2: list) -> list:
+def decideWinner(listSum1: int, listSum2: int) -> int:
     if (listSum1 > listSum2):
         return listSum1
     else:

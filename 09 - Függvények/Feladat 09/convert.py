@@ -1,7 +1,4 @@
-EUR: float = 400
-JPY: float = 0.75 * EUR
-USD: float = 0.8 * EUR
-CHF: float = 0.55 * EUR
+from currency import *
 
 def convert(currency: str, amount: float) -> float:
     if (currency not in ["EUR", "JPY", "USD", "CHF"]):

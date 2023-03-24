@@ -1,11 +1,11 @@
-def get_temperature() -> float:
+def getNumber(start: int, end: int) -> float:
     number: float = None
     temp: str = None
     isNumber: bool = False
     truncatedString: str = None
 
-    while (number == None):
-        print("Adja meg a hőmérsékletet Celsiusban: ", end="")
+    while (number == None or number < start or number > end):
+        print(f"Adjon meg egy számot {start} és {end} között: ", end="")
         temp = input()
         truncatedString = temp.replace(".", "").replace("-", "")
         isNumber = truncatedString.isnumeric()
@@ -16,9 +16,3 @@ def get_temperature() -> float:
             print("Nem számot adott meg.")
 
     return number
-
-
-def get_unit() -> str:
-    print("Kérem adja meg a cél mértékegységet (F - Fahrenheit, K - Kelvin): ", end="")
-    return input()
-

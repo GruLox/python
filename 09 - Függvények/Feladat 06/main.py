@@ -1,9 +1,7 @@
 from consoleIO import *
 from convert import convert
 
-temperature: float = None
-
-temperature = get_temperature()
+temperature: float = get_temperature()
 unit = get_unit()
 
 convertedTemp = convert(unit, temperature)
