@@ -19,6 +19,10 @@ def get_temperature() -> float:
 
 
 def get_unit() -> str:
-    print("Kérem adja meg a cél mértékegységet (F - Fahrenheit, K - Kelvin): ", end="")
-    return input()
+    unit: str = None
+    while (unit == None or unit not in ["F", "K"]):
+        print("Kérem adja meg a cél mértékegységet (F - Fahrenheit, K - Kelvin): ", end="")
+        unit = input().strip().upper()
+        
+    return unit
 
