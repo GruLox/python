@@ -1,4 +1,4 @@
-def get_temperature() -> float:
+def getTemperature() -> float:
     number: float = None
     temp: str = None
     isNumber: bool = False
@@ -18,7 +18,7 @@ def get_temperature() -> float:
     return number
 
 
-def get_unit() -> str:
+def getUnit() -> str:
     unit: str = None
     while (unit == None or unit not in ["F", "K"]):
         print("Kérem adja meg a cél mértékegységet (F - Fahrenheit, K - Kelvin): ", end="")
