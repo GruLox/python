@@ -9,5 +9,7 @@ print(f"A két megadott szám {n1} és {n2}")
 
 randNum: int = randint(n1, n2) 
 
-game(randNum)
+tries = game(randNum)
+
+print(f"Talált! {tries} próbálkozásból találta ki a számot.")
 

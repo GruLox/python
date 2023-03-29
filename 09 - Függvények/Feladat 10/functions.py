@@ -1,6 +1,6 @@
 def game(solution: int) -> int:
     guess: str = None
-    tries: int = None
+    tries: int = 0
     while (guess != solution):
         print(f"Próbálja meg kitalálni a megoldást: ", end="")
         guess = input().strip()
@@ -15,4 +15,6 @@ def game(solution: int) -> int:
         elif (guess > solution):
             print("A megoldás kisebb")
         else:
-            print("Talált!")
+            return tries
+
+        tries += 1
