@@ -1,12 +1,12 @@
-from consoleIO import get_cord
-from mathfunctions import calculate_distance
+from consoleIO import getCoord
+from mathfunctions import calculateDistance
 
-x1: int = get_cord("x")
-y1: int = get_cord("y")
+x1: int = getCoord("x")
+y1: int = getCoord("y")
 
-x2: int = get_cord("x")
-y2: int = get_cord("y")
+x2: int = getCoord("x")
+y2: int = getCoord("y")
 
-distance: float = calculate_distance(x1, y1, x2, y2)
+distance: float = calculateDistance(x1, y1, x2, y2)
 
 print(f"A két koordináta távolsága: {distance}")

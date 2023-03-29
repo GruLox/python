@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-def get_temp() -> str: 
-    temperature: float = None
-=======
-def get_temperature() -> str:
+def getTemperature() -> float:
     number: float = None
 >>>>>>> b6b1d8220aa2939cd4dd0a8b5ef1dcd819793770
     temp: str = None
@@ -26,12 +22,13 @@ def get_temperature() -> str:
             print("Nem számot adott meg.")
 
     return number
-<<<<<<< HEAD
-=======
 
 
-def get_unit() -> str:
-    print("Kérem adja meg a cél mértékegységet (F - Fahrenheit, K - Kelvin): ", end="")
-    return input()
+def getUnit() -> str:
+    unit: str = None
+    while (unit == None or unit not in ["F", "K"]):
+        print("Kérem adja meg a cél mértékegységet (F - Fahrenheit, K - Kelvin): ", end="")
+        unit = input().strip().upper()
+        
+    return unit
 
->>>>>>> b6b1d8220aa2939cd4dd0a8b5ef1dcd819793770
