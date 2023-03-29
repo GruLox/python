@@ -1,5 +1,6 @@
 def game(solution: int) -> int:
     guess: str = None
+    tries: int = None
     while (guess != solution):
         print(f"Próbálja meg kitalálni a megoldást: ", end="")
         guess = input().strip()
