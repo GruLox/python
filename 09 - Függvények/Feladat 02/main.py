@@ -1,9 +1,7 @@
 from consoleIO import get_str, greet
 
+name: str = get_str()
 
-name: str = None
-
-name = get_str()
 greet(name)
 
 
