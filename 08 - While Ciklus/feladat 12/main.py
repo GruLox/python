@@ -13,3 +13,4 @@ while (sum < 100000):
     counter += 1
 
 print(f"{counter} hónap alatt fogja a megtakarítás elérni a 100 000 Ft-ot")
+
