@@ -1,7 +1,7 @@
 from worker import Worker
 from functions import *
 
-def getWorkers(count: int):
+def getWorkers(count: int) -> list():
     workers: list(Worker) = []
     for i in range(count):
         name = getName(i + 1)
@@ -10,6 +10,7 @@ def getWorkers(count: int):
         workers.append(Worker(name, hoursWorked, wage))
     
     return workers
+
 
 def getName(index: int) -> str:
     name: str = None

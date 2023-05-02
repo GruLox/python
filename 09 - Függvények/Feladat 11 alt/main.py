@@ -1,7 +1,8 @@
 from worker import Worker
-from consoleIO import *
+from consoleIO import getWorkers
 
-workers: list(Worker) = getWorkers(5)
+
+workers: list() = getWorkers(2)
 
 for worker in workers:
     print(worker)

@@ -1,7 +1,7 @@
 HOURLYWAGE: int = 1000
 OVERTIMEWAGE: int = 1500
 
-def calculateWage(hours: int):
+def calculateWage(hours: int) -> int:
     salary: int = None
     if (hours < 40):
         salary = hours * HOURLYWAGE
