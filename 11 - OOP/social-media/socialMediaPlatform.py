@@ -2,7 +2,7 @@ from user import User
 from post import Post
 
 class SocialMediaPlatform:
-    def __init__(self, name: str, users=None) -> None:
+    def __init__(self, name: str, users: list[User]=None) -> None:
         self.name = name
         self.users: list[User] = users if users else []
         self.posts:  list[Post] = []
