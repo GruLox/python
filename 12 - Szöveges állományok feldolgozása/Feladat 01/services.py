@@ -8,12 +8,30 @@ def calculateStudentAverage(students: list[Student]) -> float:
     return round(sum / len(students), 2)
 
 
-def exportAboveAverage(students: list[Student], average: float) -> None:
-    with open("./Feladat 01/atlagfelett.txt", "w") as file:
-        for student in students:
-            if student.gradeAverage > average:
-                file.write(f"{student.name} {student.gradeAverage}\n")
+def getBestStudent(students: list[Student]) -> Student:
+    bestStudent: Student = students[0]
 
+    for i in range(1, len(students), 1):
+        if (students[i].gradeAverage > bestStudent.gradeAverage):
+            bestStudent = students[i]
+
+    return bestStudent
+
+
+# def exportAboveAverage(students: list[Student], average: float) -> None:
+#     with open("./Feladat 01/atlagfelett.txt", "w") as file:
+#         for student in students:
+#             if (student.gradeAverage > average):
+#                 file.write(f"{student.name} {student.gradeAverage}\n")
+
+def studentsAboveAverage(students: list[Student], average: float) -> list[Student]:
+    aboveAverage: list[Student] = []
+
+    for student in students:
+        if (student.gradeAverage >= average):
+            aboveAverage.append(student)
+
+    return aboveAverage
 
 def isExcellent(students: list[Student]) -> bool:
     for student in students:

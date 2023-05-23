@@ -31,3 +31,19 @@ def importStudents() -> list[Student]:
     except FileNotFoundError as ex:
         print(f"{ex.filename} nem található!")
         return []
+    
+
+def exportAboveAverage(aboveAverageStudents: list[Student], filename: str) -> None:
+    basepath: str = os.path.dirname(os.path.abspath(__file__))
+    basepath += "/output/"
+    fileFullPath: str = os.path.join(basepath, filename)
+
+    try:
+        with open(fileFullPath, "w") as file:
+            for student in aboveAverageStudents:
+                file.write(f"{student.name} {student.gradeAverage}\n")
+
+    except FileNotFoundError as ex:
+        print(f"{ex.filename} nem található!")
+        
+
