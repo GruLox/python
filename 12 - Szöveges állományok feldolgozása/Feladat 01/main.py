@@ -44,8 +44,6 @@ print("Volt kitűnő") if bestStudent.gradeAverage >= 5 else print("Nem volt kí
 """
 
 gradeCounts = countGrades(students)
-
-
 print(gradeCounts)
 
 
