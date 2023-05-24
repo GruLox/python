@@ -55,13 +55,20 @@ def exportBooks(books: List[Book], fileName) -> None:
         print(f"{ex.filename} not found")
 
 
-def exportBooksByTopics(books: List[Book], fileName) -> None:
+def exportBooksByTopic(booksDict: Dict[str, List[Book]], fileName) -> None:
     basepath = os.path.dirname(os.path.abspath(__file__))
     basepath += "/output/"
     fileFullPath = os.path.join(basepath, fileName)
 
-    with open(fileFullPath, "w"):
-        pass
+    with open(fileFullPath, "w") as file:
+        for category, books in booksDict.items():
+            file.write(f"{category}: \n")
+            for book in books:
+                file.write(f"\t- {book}\n")
+
+            file.write("\n")
+
+        
 
 
 

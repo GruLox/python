@@ -1,6 +1,6 @@
 from book import Book
-from bookIO import importBooks, exportBooks
-from services import filterCompSciBooks, filter1900sBooks, sortBooks
+from bookIO import importBooks, exportBooks, exportBooksByTopic
+from services import filterCompSciBooks, filter1900sBooks, sortBooks, sortIntoDictByTopic
 
 
 books: list[Book] = importBooks()
@@ -32,4 +32,4 @@ Krimi:
 """
 
 booksDict = sortIntoDictByTopic(books)
-exportBooksByTopic(books, "kategoriak.txt")
+exportBooksByTopic(booksDict, "kategoriak.txt")

@@ -1,0 +1,56 @@
+krimi: 
+	- Agatha Christie - Tűz kicsi n�ger [2010]
+	- Vavyan Fable - T�zvar�zs [2010]
+	- Stephen King - A t�zgy�jt� [2010]
+	- Agatha Christie - �jf�lt�jt [2008]
+	- Vavyan Fable - V�szbej�rat [2008]
+	- Agatha Christie - �s elj� a hal�l... [2007]
+	- Vavyan Fable - �bredj velem! [2007]
+	- Agatha Christie - A v�ratlan vend�g [2004]
+	- Agatha Christie - A v�d tan�ja [1994]
+
+sci-fi: 
+	- Harry Harrison - Fagyos �den [2010]
+	- Stephen King - �lomcsapda [2006]
+
+term�szettudom�ny: 
+	- Michael Allaby - A F�ld enciklop�di�ja [2010]
+	- Robert Hutchinson - A F�ld enciklop�di�ja [2010]
+	- John Sparks - Az �ce�n [2007]
+	- Robert Dinwiddie - Az �ce�n [2007]
+	- Robert Dinwiddie - Az univerzum [2007]
+	- Philip Eales - Az �ce�n [2007]
+	- Philip Eales - Az univerzum [2007]
+	- Fabien Cousteau - Az �ce�n [2007]
+	- David Attenborough - Az �let er�pr�b�i [1994]
+	- David Attenborough - Az �l� bolyg� - a f�ld mai arculata [1994]
+	- David Attenborough - Az els� �denkert [1989]
+	- Isaac Asimov - A biol�gia r�vid t�rt�nete [1972]
+
+mesek�nyv: 
+	- M�r J�kai - A gyevi t�rv�ny - Tanuls�gos mes�k, mond�k M�ty�s kir�lyr�l [2010]
+	- Ferenc M�ra - A gyevi t�rv�ny - Tanuls�gos mes�k, mond�k M�ty�s kir�lyr�l [2010]
+	- Ferenc M�ra - A nagyhatalm� s�ndiszn�cska [2010]
+
+informatika: 
+	- Martin Fowler - Domain-Specific Languages [2010]
+	- Martin Fowler - Refactoring - K�djav�t�s �jratervez�ssel [2006]
+	- Erich Gamma - Programtervez�si mint�k - �jrahasznos�that� elemek objektumk�zpont� programokhoz [2004]
+	- Erich Gamma - Design Patterns: Elements of Reusable Object-Oriented Software [1994]
+
+t�rt�nelem: 
+	- M�r J�kai - 1848 - a magyar szabads�gharcz 1848-49-ben [2009]
+	- Andr� Castelot - Nap�leon [2004]
+	- Georges Lefebvre - Nap�leon [1975]
+
+thriller: 
+	- Stephen King - Dolores [2006]
+
+sz�pirodalom: 
+	- M�r J�kai - A k�sz�v� ember fiai [2006]
+	- Ferenc M�ra - Aranykopors� [2005]
+	- Isaac Asimov - A Hold trag�di�ja [1979]
+
+horror: 
+	- Stephen King - Hasznos holmik [2005]
+

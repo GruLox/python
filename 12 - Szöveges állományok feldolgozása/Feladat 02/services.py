@@ -31,7 +31,12 @@ def sortBooks(books: List[Book]) -> List[Book]:
 
 
 def sortIntoDictByTopic(books: List[Book]):
-    booksDict = {}
+    booksDict: dict[str, List[Book]]  = {}
 
     for book in books:
-        pass
+        if (book.topic not in booksDict):
+            booksDict[book.topic] = [book]
+        else:
+            booksDict[book.topic].append(book)
+
+    return booksDict
