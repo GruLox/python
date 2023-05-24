@@ -31,7 +31,8 @@ aboveAverageStudents = studentsAboveAverage(students, average)
 exportAboveAverage(aboveAverageStudents, "atlagfelett.txt")
 
 # 6 - Van e kitünő tanulónk?
-print("Volt kitűnő") if isExcellent(students) else print("Nem volt kítűnő")
+print("Volt kitűnő") if bestStudent.gradeAverage >= 5 else print("Nem volt kítűnő")
+
 
 """7 - Hány elégtelen, elégséges, jó, jeles és kitünő tanuló van az osztályban?
     Értékhatárok:

@@ -35,7 +35,7 @@ def studentsAboveAverage(students: list[Student], average: float) -> list[Studen
 
 def isExcellent(students: list[Student]) -> bool:
     for student in students:
-        if student.gradeAverage >= 4.5:
+        if (student.gradeAverage == 5):
             return True
         
     return False
